@@ -1,0 +1,152 @@
+#gamecontainer {
+    background-color: "#e6f9ff";
+    background-image: url("Images/bakgrund3.png");
+    background-size: cover;
+    width: 1000px; 
+    height: 600px; 
+    border-style: solid; 
+    border-width: thin;
+    margin: auto;
+    position: relative;
+}
+
+#container {
+  background-color: white; 
+  width:300px; 
+  height: 35px; 
+  border-style: solid; 
+  border-width: thin;
+}
+
+#Moodmeter {
+  background-color: white; 
+  width:300px; 
+  height: 35px;
+}
+
+#tamaDiv {
+    position: absolute;
+    padding-top: 305px;
+}
+
+#tamaDiv img {
+  width: 200px; 
+  height: 130px;
+}
+  
+.tamagotchi {
+    position: absolute;
+    display: none;
+}
+
+.thought_bubble {
+  position: absolute;
+
+}
+  
+.button, #foodButton {
+    background-image: radial-gradient(rgb(192, 192, 192), rgb(49, 49, 49));
+    border: 1px solid white;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover, #foodButton:hover {
+  background-image: radial-gradient(rgb(155, 155, 155), rgb(27, 27, 27));
+}
+
+#game_buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.testContainer {
+  width: 100%;
+}
+
+#test {
+  width: 300px;
+  height: 35px;
+  background-color: aqua;
+}
+
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(160, 160, 160));
+    margin: 15% auto;
+    padding: 30px 0px 30px 0px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 15px;
+  }
+
+  .modal-main {
+    display: flex;
+    margin: auto;
+  }
+
+  .modal-image {
+    width: 200px; 
+    height: 130px; 
+    margin: 2%;
+  }
+
+  .close {
+    color: rgb(104, 104, 104);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .modal-footer {
+    margin: auto;
+    flex-grow: 1;
+  }
+
+  .close-button {
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(52, 89, 255));
+    border-radius: 10px;
+    border: 0;
+    color: rgb(0, 0, 0);
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
+  }
+
+  .close-button:hover {
+    background-image: radial-gradient(rgb(175, 180, 255), rgb(22, 54, 197));
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
