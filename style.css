@@ -14,14 +14,15 @@
   background-color: white; 
   width:300px; 
   height: 35px; 
-  border-style: solid; 
-  border-width: thin;
+  border: 0.5px solid white; 
+  border-radius: 0px 10px 10px 0px;
 }
 
 #Moodmeter {
   background-color: white; 
   width:300px; 
   height: 35px;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #tamaDiv {
@@ -45,9 +46,9 @@
 }
   
 .button, #foodButton {
-    background-image: radial-gradient(rgb(192, 192, 192), rgb(49, 49, 49));
-    border: 1px solid white;
-    border-radius: 20px;
+    background-image: radial-gradient(rgb(255, 255, 255), rgb(142, 190, 78));
+    border: 1px solid rgb(124, 180, 51);
+    border-radius: 15px;
     color: rgb(0, 0, 0);
     padding: 15px 32px;
     text-align: center;
@@ -56,26 +57,28 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
+    transition: transform 0.2s ease-in-out;
 }
 
 .button:hover, #foodButton:hover {
-  background-image: radial-gradient(rgb(155, 155, 155), rgb(27, 27, 27));
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(85, 117, 44));
+  transform: scale(1.1, 1.1);
 }
 
 #game_buttons {
   display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.testContainer {
-  width: 100%;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+  margin-top: 0.5%;
 }
 
 #test {
   width: 300px;
   height: 35px;
   background-color: aqua;
+  position: absolute;
 }
 
  .modal {
@@ -96,11 +99,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
     align-content: space-around;
     background-image: radial-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgb(160, 160, 160));
     margin: 15% auto;
-    padding: 30px 0px 30px 0px;
+    padding: 1.5% 3% 1.5% 3%;
     border: 1px solid #888;
     width: 40%;
     border-radius: 15px;
@@ -112,15 +114,15 @@
   }
 
   .modal-image {
-    width: 200px; 
-    height: 130px; 
+    width: 250px; 
+    height: 153px; 
     margin: 2%;
   }
 
   .close {
-    color: rgb(104, 104, 104);
+    color: rgb(75, 75, 75);
     float: right;
-    font-size: 28px;
+    font-size: 2.5em;
     font-weight: bold;
   }
 
@@ -130,18 +132,13 @@
   }
 
   .close-button {
-    background-image: radial-gradient(rgb(255, 255, 255), rgb(52, 89, 255));
-    border-radius: 10px;
+    background-image: radial-gradient(rgb(196, 226, 255), rgb(49, 152, 248));
+    margin-top: 40%;
     border: 0;
-    color: rgb(0, 0, 0);
-    padding: 10px 25px;
-    text-align: center;
-    font-size: 1em;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
   }
 
   .close-button:hover {
-    background-image: radial-gradient(rgb(175, 180, 255), rgb(22, 54, 197));
+    background-image: radial-gradient(rgb(196, 226, 255), rgb(32, 116, 196));
   }
   
   .close:hover,

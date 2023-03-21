@@ -70,14 +70,8 @@ async function goSleep(ms) {
 //och kontaktar sedan getValues funktionen för att den ska uppdatera mätaren samtidigt som man klickar på någon av knapparna
 function love(){
     tamagotchi.love = check(tamagotchi.love, 5)
-    var bubble = document.getElementsByClassName("thought_bubble");
-
     getValues ();
     appreciation();
-
-    if (tamagotchi.love >= 5) {
-      bubble.style.display = "none";
-    }
 }
 
 function hunger(food){
@@ -227,12 +221,11 @@ function flip () {
 
 
 // keybindings
-
+var amountToMove = 50;
+var testDiv = document.getElementById("test");
 function moveTamagotchi() {
-  let antalPx = 50;
-  let move = document.getElementById("test");
-  move.style.position = "relative";
-  move.style.left = antalPx + "px";
+  testDiv.style.left=amountToMove + "px";
+
 }
 
 var tamaMove = setInterval(tamaSlide, 900);
@@ -250,7 +243,7 @@ function start(){
 	tamaFlip = setInterval(flip, 30);
 }
 
-// Mat popup
+// MODAL //
 var modal = document.getElementById("myModal");
 var foodButton = document.getElementById("foodButton");
 var spanClose = document.getElementsByClassName("close")[0];
@@ -276,4 +269,5 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-} 
+}
+
