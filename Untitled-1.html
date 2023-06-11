@@ -5,9 +5,12 @@
     <title>Emelie Hansson</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
 	</head>
 <body>
-
+  <h1>Javascript Tamagotchi</h1>
   <div id="gamecontainer">
     <!--<div id="namesign" style="position: absolute; top: 55%; left: 20%; background-color: #806f5c;"></div>-->
       <div id="container">
@@ -18,7 +21,7 @@
       <div id="bath_meter">Bath: 0</div>
       <div id="tired_meter">Tired: 0</div>-->
       </div>
-        <div id="tamaDiv" onkeydown="moveTama()">
+        <div id="tamaDiv">
           <!--<div class="thought_bubble"><img src="bubble.png" style="width: 130px; height: 100px;"></div>-->
           <div class="tamagotchi"><img src="Images/tama1png.png"></div>
           <div class="tamagotchi"><img src="Images/tama2png.png"></div>
@@ -30,7 +33,7 @@
         </div>
 </div>
 
-<div id="game_buttons">
+<div id="button-container">
     <button class="button" onclick="love()">Klappa</button>
     <button id="foodButton" onclick="hunger()">Mata</button>
     <button class="button" onclick="fun()">Lek</button>
@@ -38,9 +41,9 @@
     <button class="button" onclick="tired()">Sova</button>  
 </div>
 
-  <div id="test">HEJ</div>  
-<br>
-<button onclick="moveTamagotchi()">klicka</button>
+<div id="testContainer">
+  <div id="test">HEJ</div>    
+</div>
 
 
 <div id="myModal" class="modal">

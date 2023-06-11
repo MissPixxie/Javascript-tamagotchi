@@ -1,15 +1,4 @@
 
-//    function welcome() {
-//        var name = prompt("Welcome to Mypet !\nYour per is excited to meet you but first it needs a name", "Enter your pet's name");
-//        if (name != null) {
-//          var petname = document.createElement("h4");
-//          var t = document.createTextNode(name);
-//          petname.appendChild(t);                                       
-//          document.getElementById("namesign").appendChild(petname); 
-//        }
-//      }
-//welcome ();
-
    const tamagotchi = {love: 0, hunger: 0, fun: 0, bath: 0, tired: 0}
   
 
@@ -27,9 +16,6 @@ function check(val, inc){
 }
 
 function sleep(ms) {
-  //let myPromise = new Promise(function(myResolve, myReject) {
-  //  setTimeout(function() { myResolve("I love You !!"); }, ms);
-  //});
 	return new Promise(r => setTimeout(r, ms));
 }
 
@@ -123,11 +109,16 @@ function time () {
 	}
     getValues();
 }
-setInterval(time, 36000);
+setInterval(time, 360000);
 
 // getValues funktionen är kopplad till känslofunktionerna , den summerar känslorna och uppdaterar mätaren när man klickar på knapparna
 
 function getValues (love, hunger, fun, bath, tired) {
+
+  const testMood = [];
+  testMood.push(tamagotchi.love, tamagotchi.hunger);
+
+  console.log(testMood);
 
   var mood = tamagotchi.love + tamagotchi.hunger + tamagotchi.fun + tamagotchi.bath + tamagotchi.tired;
   console.log(mood);
@@ -221,12 +212,35 @@ function flip () {
 
 
 // keybindings
-var amountToMove = 50;
-var testDiv = document.getElementById("test");
-function moveTamagotchi() {
-  testDiv.style.left=amountToMove + "px";
+const testDiv = document.getElementById("test");
 
-}
+document.addEventListener('keydown', (e) => {
+
+  if (e.key === 'ArrowLeft') {
+    let currentPosition = testDiv.offsetLeft;
+    testDiv.style.left = (currentPosition - 50) + 'px';
+    console.log('left arrow pressed')
+  } else if (e.key === 'ArrowRight') {
+
+    let currentPosition = testDiv.offsetLeft;
+    testDiv.style.left = (currentPosition + 50) + 'px';
+
+    console.log('right arrow pressed')
+  }
+})
+
+
+
+// var newPosition = 50;
+// // window.addEventListener("keydown", moveTamagotchi);
+//  function moveTamagotchi() {
+//   testDiv.style.right=newPosition + 'px';
+//   if ( riktning === 'höger') {
+//     newPosition = newPosition+50;
+//   }
+//  }
+
+
 
 var tamaMove = setInterval(tamaSlide, 900);
 var tamaFlip = setInterval(flip, 30);
