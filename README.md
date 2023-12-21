@@ -7,6 +7,12 @@ School project, tamagotchi made in vanilla Javascript.
 
 ![sad](https://github.com/MissPixxie/Javascript-tamagotchi/assets/78534885/3177e00e-2d60-4c2b-8a1d-90a10972609b)
 
+
+When you interact with it, it stops and smiles and then continues
+
+![interact](https://github.com/MissPixxie/Javascript-tamagotchi/assets/78534885/5a98d527-17d4-443c-9647-ba9590026347)
+
+
 You can feed it different items that gives different values to the mood.
 
 ![feed](https://github.com/MissPixxie/Javascript-tamagotchi/assets/78534885/56fdab29-20a0-4b0b-b14f-f79b7219d036)
