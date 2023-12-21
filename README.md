@@ -12,4 +12,5 @@ You can feed it different items that gives different values to the mood.
 ![feed](https://github.com/MissPixxie/Javascript-tamagotchi/assets/78534885/56fdab29-20a0-4b0b-b14f-f79b7219d036)
 
 Sleep gets triggered but button click or when the sleep is down to 0.
+
 ![sleep](https://github.com/MissPixxie/Javascript-tamagotchi/assets/78534885/ace15086-a4a6-48fc-acca-4bd5dc156060)
