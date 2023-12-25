@@ -1,4 +1,4 @@
-School project, tamagotchi made in vanilla Javascript.
+<h1>School project, tamagotchi made in vanilla Javascript.</h1>h1>
 I'm a 90's kid that had a dozen tamagotchi's so when we got free hands in our examination project in my first course in Javascript, I thought that it would be fun to recreate my childhood.
 The tamagothci has 3 moods that get triggered by interacting and time.
 
