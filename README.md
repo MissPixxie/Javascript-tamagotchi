@@ -3,7 +3,8 @@ I'm a 90's kid that had a dozen tamagotchi's so when we got free hands in our ex
 The tamagothci has 3 moods that get triggered by interacting and time.
 
 
-Happy
+# Screenshots
+### Happy
 ![happy](https://github.com/MissPixxie/Javascript-tamagotchi/assets/78534885/429d4089-f12b-4b2e-b4ce-28da9539cba8)
 
 
